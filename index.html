@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your AI</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.72/build/spline-viewer.js"></script>
+</head>
+<body>
+
+    <!-- 🔹 Futuristic Navbar -->
+    <nav>
+        <div class="logo">Find Your AI</div>
+        <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> About </a></li>
+            <li><a href="#"> List of AI Models</a></li>
+            <li><a href="#"> Pricing</a></li>
+        </ul>
+        
+    </nav>
+
+    <!-- 🔹 3D Robot Model (In a Rounded Box) -->
+    <div id="robot-container">
+        <spline-viewer url="https://prod.spline.design/Zk6KTyz0fH3KJ8BR/scene.splinecode"></spline-viewer>
+        <div class="robot-text">
+            <div class="wrap0">
+                <div class="text-box">
+                    <h3>AI Model
+                        Recommendation System</h3>
+                    <p> A platform for AI model
+                        recommendations, making selection
+                        easier and more intuitive.
+                    </p>
+                </div>
+            </div>
+            <div class="wrap1">
+                <div class="text-box">
+                    <h3>Common AI</h3>
+                    <p> The most common AI models
+                        recommendations, making your work
+                        easier and more intuitive.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🔹 AI Recommendation System -->
+    <section id="ai-recommendation">
+        <h2>🔍 Find the Best AI for Your Needs</h2>
+        <label for="category">🛠 Select AI Category:</label>
+        <select id="category">
+            <option value="image"> Image Generation</option>
+            <option value="writing">Writing Assistants</option>
+            <option value="chatbot">Chatbots</option>
+            <option value="code">Code Generators</option>
+            <option value="voice">Voice AI</option>
+        </select>
+        <button onclick="recommendAI()"> Find AI</button>
+
+        <!-- 🔹 AI Recommendation Output -->
+        <div id="ai-result"></div>
+    </section>
+
+    <section id="wrapper">
+        
+        <div class="wrap2">
+            <div class="text-box">
+                <div class="overlay"></div>
+                <div class="logo"></div>
+                <h3>ChatGPT</h3>
+            </div>
+        </div>
+
+        <div class="wrap3">
+            <div class="text-box">
+                <div class="overlay"></div>
+                <div class="logo"></div>
+                <h3>Meta AI</h3>
+            </div>
+        </div>
+
+        <div class="wrap4">
+            <div class="text-box">
+                <div class="overlay"></div>
+                <div class="logo">
+                </div>
+                <h3>Google Gemini</h3>
+            </div>
+        </div>
+
+        <div class="wrap5">
+            <div class="text-box">
+                <div class="overlay"></div>
+                <div class="logo">
+                </div>
+                <h3>DeepSeek</h3>
+            </div>
+        </div>
+        <div class="wrap6">
+            <div class="text-box">
+                <div class="overlay"></div>
+                <div class="logo">
+                </div>
+                <h3>BlackBox</h3>
+            </div>
+        </div>
+        <div class="wrap7">
+            <div class="text-box">
+                <div class="overlay"></div>
+                <div class="logo">
+                </div>
+                <h3>Perplexity</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--  Footer Section -->
+     <section>
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcon">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="#"> Home</a></li>
+                        <li><a href="#"> About </a></li>
+                        <li><a href="#"> Pricing</a></li>
+                        <li><a href="#"> List of AI Models</a></li>
+                        <li><a href="#"> Contact Us</a></li>
+                        <li><a href="#"> Our Team</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2025; Designed by <span class="designer" herf="">TeamWork</span> </p>
+            </div>
+        </footer>
+     </section> 
+      
+   
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

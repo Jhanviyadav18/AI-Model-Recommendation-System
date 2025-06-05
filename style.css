@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* 🔹 Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+     background-image: url('image/gradient.png'); /* adjust path if needed */
+    background-size: cover;
+    background-position: center;    
+    
+    color: rgb(116, 88, 88);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    background-color: rgb(237, 225, 225);
+    border-bottom: #fff 1px solid;
+    color: #fff;
+}
+
+
+/* 🔹 Futuristic Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav-index: auto;
+
+    height: 10vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0px 20px 0px 20px;
+    backdrop-filter: blur(100%);
+}
+
+/* 🔹 Navbar Text */
+nav .logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin: 0px 10px;
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: normal;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        position: fixed;
+        top: 50px;
+        left: 0%;
+        width: 50%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        bottom: 50px;
+        border-radius: 0px 30px 30px 0px;
+        border: 2px solid rgba(255, 255, 255, 0.5);;
+        background-color: none;;
+    }
+    nav ul li {
+        margin: 20px 0px;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+}
+
+/* 🔹 3D Robot Model Box */
+#robot-container {
+    position: absolute;
+    right: 50px;
+    left: 50px;
+    top: 50px;
+    margin-top: 50px;
+    
+    width: 10;
+    height:100%;
+    display: flex;
+    background: transparent;
+    border-radius: 30px;
+    border: 2px solid gray;
+    backdrop-filter: blur(10px) saturate(80%);
+    padding: none;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
+    inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+    inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
+    0 3rem 3rem rgba(0, 0, 0, 0.3),
+    0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+}
+.wrap0 {
+    position: absolute;
+    border: 1px solid gray;
+    border-radius: 30px;
+    top: 20%;
+    right: 60%;
+    color: #fff;
+    padding: 20px;
+}
+.wrap0 h2 {
+    font-size: 30px;
+}
+.wrap0 p {
+    font-size: 18px;
+    
+}
+
+
+.wrap1  {
+    position: absolute;
+    border: 1px solid  gray;
+    border-radius: 30px;
+    bottom: 10%;
+    left: 60%;
+    color: #fff;
+    padding: 20px;
+}
+.wrap1 h2 {
+    font-size: 28px;
+}
+.wrap1 p {
+    font-size: 18px;
+}
+
+
+/* 🔹 AI Recommendation Section */
+#ai-recommendation {
+    left: 10%;
+    right: 10%;
+    top: 700px;
+    position: absolute;
+    margin-top: 50px;
+    padding: 12px 25px;
+    width: 80%;
+    width: 10;
+    background: #080808;
+    color: white;
+    border:2px solid gray;
+    font-size: 16px;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
+    inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+    inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
+    0 3rem 3rem rgba(0, 0, 0, 0.3),
+    0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px) saturate (80%);
+}
+
+/* 🔹 Dropdown & Button */
+#category {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow:inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
+    inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+    inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
+    0 3rem 3rem rgba(0, 0, 0, 0.3),
+    0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8) ;
+    border-radius: 100px;
+    background: #080808;
+    color: white;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+button {
+    padding: 12px 25px;
+    background: #080808;
+    border:2px solid gray;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
+    inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+    inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
+    0 3rem 3rem rgba(0, 0, 0, 0.3),
+    0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    border-radius: 100px;
+    margin-left: 40px;
+   
+    
+}
+
+button:hover {
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.3);
+    transition: all 0.10s ease;
+}
+
+/* 🔹 AI Output */
+#ai-result {
+    margin-top: 20px;
+}
+
+.ai-box {
+    background: rgba(163, 165, 186, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 20px rgba(23, 193, 193, 0.2);
+}
+/*
+
+#wrapper {
+    top: 165vh;
+    left: 5%;
+    right: 0%;
+    position: absolute;
+    height: 700px;
+    margin-top: 5px;
+    padding: 12px 25px;
+    width: 90%;
+    background: none;;
+    border:2px solid gray;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
+    inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+    inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
+    0 3rem 3rem rgba(0, 0, 0, 0.3),
+    0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px) saturate (80%);
+}*/
+.wrap2 {
+    background-image: url('/image/blackbox.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+
+    top: 178vh;
+    left: 65%;
+    right: 80%;
+    position: absolute;
+    height: 300px;
+    margin-top: 5px;
+    padding: 12px 25px;
+    width: 30%;
+    color: rgb(118, 118, 140);
+    border:2px solid gray;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
+    inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+    inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
+    0 3rem 3rem rgba(0, 0, 0, 0.3),
+    0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px) saturate (80%);
+}
+
+
+
+.wrap3 {
+    background-image: url('image/metaai.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+
+    top: 178vh;
+    left: 35%;
+    right: 80%;
+    position: absolute;
+    height: 300px;
+    margin-top: 5px;
+    padding: 12px 25px;
+    width: 30%;
+    cursor: pointer;
+    color: rgb(118, 118, 140);
+    border: 2px solid gray;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
+                inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+                inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
+                0 3rem 3rem rgba(0, 0, 0, 0.3),
+                0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px) saturate(80%);
+}
+
+.wrap4 {
+    background-image: url('image/gemini.png'); /* adjust path if needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+
+    top: 178vh;
+    left: 5%;
+    right: 80%;
+    position: absolute;
+    height: 300px;
+    margin-top: 5px;
+    padding: 12px 25px;
+    cursor: pointer;
+    width: 30%;
+    color: rgb(118, 118, 140);
+    border:2px solid gray;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
+    inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+    inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
+    0 3rem 3rem rgba(0, 0, 0, 0.3),
+    0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px) saturate (80%);
+}
+
+.wrap5 {
+    background-image: url('image/deepseek.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+
+    top: 250vh;
+    left: 65%;
+    right: 80%;
+    position: absolute;
+    height: 300px;
+    margin-top: 5px;
+    padding: 12px 25px;
+    width: 30%;
+    cursor: pointer;
+    color: rgb(118, 118, 140);
+    border:2px solid gray;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
+    inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+    inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
+    0 3rem 3rem rgba(0, 0, 0, 0.3),
+    0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px) saturate (80%);
+}
+
+.wrap6 {
+    background-image: url('image/blackbox.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+
+    top: 250vh;
+    left: 35%;
+    right: 80%;
+    position: absolute;
+    height: 300px;
+    margin-top: 5px;
+    padding: 12px 25px;
+    width: 30%;
+    cursor: pointer;
+    color: rgb(118, 118, 140);
+    border:2px solid gray;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
+    inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+    inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
+    0 3rem 3rem rgba(0, 0, 0, 0.3),
+    0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px) saturate (80%);
+}
+.wrap7 {
+     background-image: url('image/Perplexity.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+
+    top: 250vh;
+    left: 5%;
+    right: 80%;
+    position: absolute;
+    height: 300px;
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 12px 25px;
+    width: 30%;
+    color: rgb(118, 118, 140);
+    border:2px solid gray;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
+    inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+    inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
+    0 3rem 3rem rgba(0, 0, 0, 0.3),
+    0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px) saturate (80%);
+}
+/* 
+@keyframes scrollLeft {
+    to{
+        left: -320px;
+    }
+}
+
+.item {
+    position: absolute;
+    border-radius: 2px solid black;
+    width: 400px;
+    height: 250px;
+    background-color:black;
+    border-radius: 10px;
+    left: 150%;}
+    /* 
+    animation-name: scrollLeft;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+/* 
+.item1 {
+    animation-delay: calc(20s / 4 * (4 - 1)* -1);
+}
+.item1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.item2 {
+    animation-delay: calc(20s / 4 * (4 - 2)* -1);
+}
+.item3 {
+    animation-delay: calc(20s / 4 * (4 - 3)* -1);
+}
+.item4 {
+    animation-delay: calc(20s / 4 * (4 - 4)* -1);
+}
+
+.item5 {
+    animation-delay: calc(20s / 5 * (5 - 5)* -1);
+}
+
+ Footer */
+
+footer {
+    background-color:black;
+    position: relative;
+    top:320vh;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 30px;
+    
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 10px 0px 10px;
+}
+
+.socialIcon  {
+    display: flex;
+    justify-content: center;
+
+}
+
+.socialIcon a{
+    text-decoration: none;
+    padding: px ;
+    background-color: rgb(100, 97, 97);
+    margin: 5px ;
+    border-radius: 40%;
+}
+.socialIcon a i{
+    font-size: 1em;
+    color: #080808;
+    opacity: 0.9;
+}
+
+.socialIcon a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcon a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav {
+    margin: 5px  0px;
+}
+
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-family: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+    text-decoration: underline; 
+}
+
+.footerBottom{
+    background-color: #111;
+    padding: 10px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: wheat;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 0px 5px;
+}
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
+@media(max-width:700px)
+{
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
